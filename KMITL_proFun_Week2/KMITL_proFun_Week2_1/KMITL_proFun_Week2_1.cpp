@@ -2,10 +2,6 @@
 
 using namespace std;
 
-int oddSigma(int n){
-    return n*n;
-}
-
 void print(int n){
     int t=n,f=1;
     for (int i = 0; i < n; i++)
