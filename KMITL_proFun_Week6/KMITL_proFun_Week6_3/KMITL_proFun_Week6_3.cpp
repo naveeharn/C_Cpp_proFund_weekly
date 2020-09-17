@@ -2,31 +2,17 @@
 
 using namespace std;
 
-// int swap(int a,int b){
-//     int c;
-//     if (a>b)
-//     {
-//         c=a;
-//         a=b;
-//         b=c;
-//     }
-    
-// }
-
 int main(){
     int n,a[50],c=0;
     cin>>n;
-
     for (int i = 0; i < n; i++)
     {
         cin>>a[i];
     }
-    
     for (int i = 0; i < n-1; i++)
     {
         for (int j = 0; j <= n-1-i; j++)
         {
-            //swap(a[j],a[j+1]);
             if (a[j]>a[j+1])
             {
                 c=a[j];
@@ -35,8 +21,6 @@ int main(){
             }
         }
     }
-    
-
     for (int i = 0; i < n; i++)
     {
         if (a[i]>0)
@@ -54,10 +38,6 @@ int main(){
         }
         
     }
-    
-    
-
-
     cout<<endl;
     return 0;
 }

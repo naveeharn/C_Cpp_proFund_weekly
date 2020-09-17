@@ -3,23 +3,26 @@
 using namespace std;
 
 int main(){
-    int a,b,c,n=0;
+    int side[3],n=0;
 
-    cin>>a>>b>>c;
-
-    while (a*b*c!=1)
+    for (int i = 0; i < 3; i++)
     {
-        if (a>=b&&a>=c)
+        cin>>side[i];
+    }
+
+    while (side[0]*side[1]*side[2]!=1)
+    {
+        if (side[0]>=side[1]&&side[0]>=side[2])
         {
-            a/=2;
+            side[0]/=2;
         }
-        else if (b>=a&&b>=c)
+        else if (side[1]>=side[0]&&side[1]>=side[2])
         {
-            b/=2;
+            side[1]/=2;
         }
         else
         {
-            c/=2;
+            side[2]/=2;
         }
         n++;
     }
