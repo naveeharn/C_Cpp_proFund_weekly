@@ -31,10 +31,8 @@ int main(){
         compare=0;
         for (int i = 0; i < n-(2*c)+1; i++)
         {
-            // while (!Atomic[i].isStill)  i++;
             i = indexAtom(i);
             j=i+1;
-            // while (!Atomic[j].isStill)  j++;
             j = indexAtom(j);
             if (compare<abs(Atomic[i].energy-Atomic[j].energy))
             {
